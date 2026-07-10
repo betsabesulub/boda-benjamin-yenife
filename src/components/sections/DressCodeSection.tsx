@@ -51,11 +51,10 @@ export function DressCodeSection({ section }: SectionProps) {
           <div className="dress-code-palette" aria-label="Colores sugeridos">
             <p className="dress-code-block-title">Colores sugeridos</p>
             <div className="dress-code-palette__swatches">
+              <span className="dress-code-palette__swatch dress-code-palette__swatch--pink" title="Rosadito" />
+              <span className="dress-code-palette__swatch dress-code-palette__swatch--pastel-blue" title="Azul pastel" />
+              <span className="dress-code-palette__swatch dress-code-palette__swatch--pistachio" title="Verde pistache" />
               <span className="dress-code-palette__swatch dress-code-palette__swatch--lilac" title="Lila" />
-              <span className="dress-code-palette__swatch dress-code-palette__swatch--charcoal" title="Gris carbón" />
-              <span className="dress-code-palette__swatch dress-code-palette__swatch--taupe" title="Taupe" />
-              <span className="dress-code-palette__swatch dress-code-palette__swatch--beige" title="Dorado beige" />
-              <span className="dress-code-palette__swatch dress-code-palette__swatch--rose" title="Rosa palo" />
             </div>
           </div>
         </div>
