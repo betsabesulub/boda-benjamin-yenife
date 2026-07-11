@@ -63,7 +63,7 @@ export function HeroSection({ section }: SectionProps) {
     : undefined;
 
   return (
-    <section id={section.id} className="hero-section reveal reveal-soft" style={heroStyle}>
+    <section id={section.id} className="hero-section" style={heroStyle}>
       <div className="hero-section__media">
         {images.hero && <img src={images.hero} alt={hero.names} />}
       </div>

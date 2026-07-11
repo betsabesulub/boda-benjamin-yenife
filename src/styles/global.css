@@ -192,6 +192,60 @@ img {
   transform: scaleX(1);
 }
 
+.hero-section .reveal {
+  animation: hero-load-reveal var(--reveal-duration) var(--reveal-ease) both;
+  animation-delay: var(--reveal-delay);
+}
+
+.hero-section .reveal-scale {
+  animation-name: hero-load-scale;
+}
+
+.hero-section .reveal-divider {
+  animation-name: hero-load-divider;
+  transform-origin: center;
+}
+
+@keyframes hero-load-reveal {
+  from {
+    opacity: 0;
+    filter: blur(var(--reveal-blur));
+    transform: translate3d(var(--reveal-x), var(--reveal-y), 0);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-load-scale {
+  from {
+    opacity: 0;
+    filter: blur(var(--reveal-blur));
+    transform: translate3d(var(--reveal-x), var(--reveal-y), 0) scale(var(--reveal-scale));
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes hero-load-divider {
+  from {
+    opacity: 0;
+    transform: scaleX(0.48);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
 .hero-section {
   position: relative;
   display: grid;
